@@ -1,0 +1,3 @@
+sudo apt install libcurl-dev
+sudo apt install libz-dev
+g++ 3macloc.cpp -o 3macloc -lcurl -lz

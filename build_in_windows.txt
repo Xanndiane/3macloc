@@ -1,0 +1,16 @@
+ДОЛЖНЫ БЫТЬ УСТАНОВЛЕННЫ 
+- Visual Studio
+- cmake
+- g++
+
+https://curl.se/download/curl-8.7.1.tar.gz - скачиваешь curl
+Распаковываешь, заходишь в папку
+
+cmake -G "Visual Studio 17 2022" - генерируешь проект
+
+Открываешь папку build в ней файл curl.sln
+Выбираешь тип билда как Release
+Билдишь curl
+
+ну и окончательный билд
+g++ 3macloc.cpp -o 3macloc.exe -I"{путь до курла}\curl-8.7.1\include" -L"{путь до курла}\curl-8.7.1\build\lib\Release" -lcurl -lz
